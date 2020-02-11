@@ -18,6 +18,7 @@ from django.template.loader import get_template
 def getindex(request):
     template_obj=get_template('index.html')
     result=template_obj.render()
+    print(result)
     return HttpResponse(result)
 
 
